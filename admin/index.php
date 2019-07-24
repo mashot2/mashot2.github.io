@@ -9,5 +9,8 @@
 </head>
 <body>
 <h1>Welcom, ADMIN</h1>
+<?php
+echo 132;
+?>
 </body>
 </html>
