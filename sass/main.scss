@@ -1,0 +1,725 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+  box-sizing: border-box !important;
+  //overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+// Set Default variables values
+//$font-size-base: 1em;
+//$h1-font-size: $font-size-base * 2.5 !default;
+//$h2-font-size: $font-size-base * 2 !default;
+//$h3-font-size: $font-size-base * 1.75 !default;
+//$h4-font-size: $font-size-base * 1.5 !default;
+//$h5-font-size: $font-size-base * 1.25 !default;
+//$h6-font-size: $font-size-base !default;
+p.caca {
+  font-size: calc(12px + 1vw) !important;
+  color: #fff !important;
+}
+
+$blue: #1663D5 !default;
+$yellow: #FC9416 !default;
+$btn-padding-y: 11px;
+// $btn-padding-x: ;
+$btn-font-size: 18px;
+$btn-line-height: 24px;
+$btn-border-radius: 4px;
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px
+) !default;
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1200px
+) !default;
+
+$close-color: #FF0000;
+.nav-item .nav-link {
+  color: #414849 !important;
+  font-weight: bold;
+
+  & {
+    opacity: 75% !important;
+  }
+}
+
+.nav-item .nav-link.active {
+  color: $blue !important;
+}
+
+.caption-my {
+  padding-top: 10% !important;
+}
+
+.main-icons-parent-div {
+  margin-top: 10%;
+}
+
+.video-translate-text {
+  top: 70px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .caption-my {
+    padding-top: 20% !important;
+  }
+  .main-icons-parent-div {
+    margin-top: 15%;
+  }
+  .video-translate-text {
+    top: 40px;
+  }
+  .courses-card {
+    min-height: 500px !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .caption-my {
+    padding-top: 30% !important;
+  }
+
+  .main-icons-div {
+    margin-left: 50%;
+    transform: translate(-25%, 0%);
+  }
+}
+
+
+//#414849
+//#6c757d
+$gray-600: #414849 !default;
+
+//Type.scss
+$h6-font-size: 1.125em;
+
+// $body-bg: #FCFCFC;
+$body-bg: rgb(145, 145, 145);
+$font-family-base: Open Sans;
+$body-color: #414849;
+
+.gradient-button {
+  background-image: linear-gradient(90deg, rgba(22, 99, 213, 1) 0%, rgba(34, 114, 232, 1) 100%);
+}
+
+.my-btn:hover {
+  background-image: linear-gradient(90deg, rgba(22, 99, 213, 1) 0%, rgba(34, 114, 232, 1) 100%);
+}
+
+.hide {
+  display: none !important;
+}
+
+//body {
+//    //min-height: 1200px;
+//}
+$navbar-padding-y: 20px;
+.my-nav {
+  box-shadow: 0px 3px 10px rgba($color: #000000, $alpha: 0.04);
+}
+
+
+.my-brand {
+  width: 222px;
+}
+
+.my-btn {
+  width: 222px;
+}
+
+.nav-item .nav-link {
+  font-size: 18px;
+  line-height: 24px;
+
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+.navbar-in-top {
+  background: rgb(13, 43, 56);
+  background: linear-gradient(180deg, rgba(13, 43, 56, 0.75) 0%, rgba(13, 43, 56, 0) 100%);
+  padding-bottom: 8% !important;
+  box-shadow: 0px 0px;
+}
+
+// Header Slider
+.fullBackground {
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.icons-div {
+  border-radius: 50%;
+}
+
+.font-weight-semibold {
+  font-weight: 600;
+}
+
+.main {
+  background-color: rgba(13, 43, 56, .25);
+  opacity: 25%;
+  height: 100vh;
+}
+
+.bg-light-1 {
+  background-color: #FCFCFC;
+}
+
+.request-input {
+  padding: 12px 16px !important;
+  min-height: 48px !important;
+}
+
+.section-2 {
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+}
+
+.round {
+  border-radius: 100% !important;
+}
+
+.col-shadow {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  border-radius: 8px;
+  min-height: 170px;
+
+  img {
+    border-radius: 8px 8px 0 0;
+  }
+}
+
+.level-primary {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  position: relative;
+}
+
+.level-secondary {
+  color: #D1D1D1;
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  position: relative;
+  border: 1px #E3E3E3 solid;
+}
+
+.level-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.section-3 ul {
+  list-style: none;
+  padding: 0 !important;
+
+  li {
+    position: relative;
+
+    &:before {
+      //left: 5px;
+      vertical-align: middle;
+      display: inline-block;
+      width: 25px;
+      height: 15px;
+      content: " ";
+      background: url("../assets/right-arrow.svg") no-repeat;
+    }
+  }
+}
+
+.bg-dark-blue {
+  background-color: #05214A;
+  box-shadow: 0px 2px 25px rgba(61, 47, 85, 0.15);
+}
+
+.fa-facebook-f {
+  color: #2699FB;
+}
+
+.soc-icon-f-div {
+  background: #ffffff;
+}
+
+.soc-icon-f-div:hover {
+  .fa-facebook-f {
+    color: #ffffff !important;
+  }
+
+  background: #2699FB;
+}
+
+.fa-google-plus-g {
+  color: #E95A5A;
+}
+
+.soc-icon-g-div {
+  background: #ffffff;
+  border: 1px #E95A5A solid;
+}
+
+.soc-icon-g-div:hover {
+  .fa-google-plus-g {
+    color: #ffffff !important;
+  }
+
+  background: #E95A5A;
+}
+
+.contact-us {
+  .skype-svg path.a {
+    fill: #00AAF2;
+  }
+
+  .skype-div:hover {
+    .skype-svg path {
+      &.a {
+        fill: #fff;
+      }
+
+      &.b {
+        fill: #00AAF2;
+      }
+    }
+
+    background-color: #00AAF2;
+  }
+
+  .skype-div {
+    height: 44px;
+    width: 44px;
+    border-radius: 4px;
+    border: 1px #00AAF2 solid;
+  }
+
+  .messenger-svg path.a {
+    fill: #1E88E5;
+  }
+
+  .messenger-div:hover {
+    .messenger-svg path {
+      &.a {
+        fill: #fff;
+      }
+
+      &.b {
+        fill: #1E88E5;
+      }
+    }
+
+    background-color: #1E88E5;
+  }
+
+  .messenger-div {
+    height: 44px;
+    width: 44px;
+    border-radius: 4px;
+    border: 1px #1E88E5 solid;
+  }
+
+  .vk-svg path.a {
+    fill: #5C81B3;
+  }
+
+  .vk-div:hover {
+    .vk-svg path {
+      &.a {
+        fill: #fff;
+      }
+
+      &.b {
+        fill: #5C81B3;
+      }
+    }
+
+    background-color: #5C81B3;
+  }
+
+  .vk-div {
+    height: 44px;
+    width: 44px;
+    border-radius: 4px;
+    border: 1px #5C81B3 solid;
+  }
+
+  .tm-svg path.a {
+    fill: #2CA5E0;
+  }
+
+  .tm-div:hover {
+    .tm-svg path {
+      &.a {
+        fill: #fff;
+      }
+
+      &.b {
+        fill: #2CA5E0;
+      }
+    }
+
+    background-color: #2CA5E0;
+  }
+
+  .tm-div {
+    height: 44px;
+    width: 44px;
+    border-radius: 4px;
+    border: 1px #2CA5E0 solid;
+  }
+
+  .viber-svg path.a {
+    fill: #7D3DAF;
+  }
+
+  .viber-div:hover {
+    .viber-svg path {
+      &.a {
+        fill: #fff;
+      }
+
+      &.b {
+        fill: #7D3DAF;
+      }
+    }
+
+    background-color: #7D3DAF;
+  }
+
+  .viber-div {
+    height: 44px;
+    width: 44px;
+    border-radius: 4px;
+    border: 1px #7D3DAF solid;
+  }
+
+  .whatsapp-svg path.a {
+    fill: #4CAF50;
+  }
+
+  .whatsapp-div:hover {
+    .whatsapp-svg path {
+      &.a {
+        fill: #fff;
+      }
+
+      &.b {
+        fill: #4CAF50;
+      }
+    }
+
+    background-color: #4CAF50;
+  }
+
+  .whatsapp-div {
+    height: 44px;
+    width: 44px;
+    border-radius: 4px;
+    border: 1px #4CAF50 solid;
+  }
+
+  div {
+    margin-right: 24px;
+  }
+}
+
+.bg-darkest-blue {
+  background-color: #041023;
+}
+
+.phone-svg {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%)
+}
+
+.phone-svg path {
+  fill: #fff;
+}
+
+// FAB ------------------------------ start
+
+.fab-container {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 999;
+  cursor: pointer;
+
+  .btn-1 {
+    background-color: #ffffff;
+    font-size: 12px;
+    color: #414849;
+    padding: 12px 35px 13px 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    opacity: 1;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  .closeBtn {
+    width: 32px;
+    height: 32px;
+    opacity: 1;
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+
+  .closeBtn:before, .closeBtn:after {
+    position: absolute;
+    left: 21px;
+    content: " ";
+    height: 20px;
+    width: 1px;
+    background-color: #fff;
+    top: 11px;
+  }
+
+  .closeBtn:before {
+    transform: rotate(45deg);
+  }
+
+  .closeBtn:after {
+    transform: rotate(-45deg);
+  }
+
+  .fab-icon-holder {
+    box-shadow: 0 0px 25px rgba(0, 0, 0, 0.16);
+  }
+
+  .fab-options {
+    list-style-type: none;
+    margin: 0;
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+    transform: scale(0);
+    transform-origin: 85% bottom;
+
+    &.active {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    li {
+      padding: 5px 0 !important;
+    }
+  }
+
+  .fab-options li {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+
+    div {
+      background-color: #ffffff;
+    }
+  }
+
+  .svg-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .skype-svg path.a {
+    fill: #00AAF2;
+  }
+
+  .skype-div:hover {
+    .skype-svg path {
+      &.a {
+        fill: #fff;
+      }
+
+      &.b {
+        fill: #00AAF2;
+      }
+    }
+
+    background-color: #00AAF2;
+  }
+
+  .skype-svg path.a {
+    fill: #00AAF2;
+  }
+
+  .skype-div:hover {
+    .skype-svg path {
+      &.a {
+        fill: #fff;
+      }
+
+      &.b {
+        fill: #00AAF2;
+      }
+    }
+
+    background-color: #00AAF2;
+  }
+
+  .skype-div {
+    height: 44px;
+    width: 44px;
+    border-radius: 4px;
+  }
+
+  .messenger-svg path.a {
+    fill: #1E88E5;
+  }
+
+  .messenger-div:hover {
+    .messenger-svg path {
+      &.a {
+        fill: #fff;
+      }
+
+      &.b {
+        fill: #1E88E5;
+      }
+    }
+
+    background-color: #1E88E5;
+  }
+
+  .messenger-div {
+    height: 44px;
+    width: 44px;
+    border-radius: 4px;
+  }
+
+  .vk-svg path.a {
+    fill: #5C81B3;
+  }
+
+  .vk-div:hover {
+    .vk-svg path {
+      &.a {
+        fill: #fff;
+      }
+
+      &.b {
+        fill: #5C81B3;
+      }
+    }
+
+    background-color: #5C81B3;
+  }
+
+  .vk-div {
+    height: 44px;
+    width: 44px;
+    border-radius: 4px;
+  }
+
+  .tm-svg path.a {
+    fill: #2CA5E0;
+  }
+
+  .tm-div:hover {
+    .tm-svg path {
+      &.a {
+        fill: #fff;
+      }
+
+      &.b {
+        fill: #2CA5E0;
+      }
+    }
+
+    background-color: #2CA5E0;
+  }
+
+  .tm-div {
+    height: 44px;
+    width: 44px;
+    border-radius: 4px;
+  }
+
+  .viber-svg path.a {
+    fill: #7D3DAF;
+  }
+
+  .viber-div:hover {
+    .viber-svg path {
+      &.a {
+        fill: #fff;
+      }
+
+      &.b {
+        fill: #7D3DAF;
+      }
+    }
+
+    background-color: #7D3DAF;
+  }
+
+  .viber-div {
+    height: 44px;
+    width: 44px;
+    border-radius: 4px;
+  }
+
+  .whatsapp-svg path.a {
+    fill: #4CAF50;
+  }
+
+  .whatsapp-div:hover {
+    .whatsapp-svg path {
+      &.a {
+        fill: #fff;
+      }
+
+      &.b {
+        fill: #4CAF50;
+      }
+    }
+
+    background-color: #4CAF50;
+  }
+
+  .whatsapp-div {
+    height: 44px;
+    width: 44px;
+    border-radius: 4px;
+  }
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
