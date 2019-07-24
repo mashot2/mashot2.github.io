@@ -1,5 +1,9 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@font-face {
+  font-family: "Segoe Print";
+  src: url("/css/fonts/segoepr.ttf") format("ttf");
+}
 * {
   box-sizing: border-box !important;
 }
