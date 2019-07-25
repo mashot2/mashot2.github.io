@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@font-face {
+  font-family: "Segoe Print";
+  src: url("/css/fonts/segoepr.ttf") format('ttf');
+}
+$font-family-base: Open Sans;
 $grid-breakpoints: (
         xs: 0,
         sm: 576px,
@@ -35,4 +41,5 @@ header {
   width: 100%;
 }
 
+@import "fab";
 @import "../node_modules/bootstrap/scss/bootstrap";
