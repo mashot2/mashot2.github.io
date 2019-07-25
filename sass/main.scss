@@ -24,14 +24,14 @@ $container-max-widths: (
         xl: 1140px
 ) !default;
 $font-size-base: 1rem;
-@media only screen and (max-width: 554px) {
-  $font-size-base: 0.7rem;
+@media only screen and (max-width: 1200px) {
+  $font-size-base: 0.9rem;
 }
 @media only screen and (max-width: 992px) {
   $font-size-base: 0.8rem;
 }
-@media only screen and (max-width: 1200px) {
-  $font-size-base: 0.9rem;
+@media only screen and (max-width: 554px) {
+  $font-size-base: 0.7rem;
 }
 body {
   line-height: 1.3em;
