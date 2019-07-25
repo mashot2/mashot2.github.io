@@ -272,6 +272,37 @@ header {
   fill: #fff;
 }
 
+.fab.fa-facebook-f {
+  color: #2699FB;
+}
+
+.soc-icon-f-div {
+  background: #ffffff;
+}
+
+.soc-icon-f-div:hover {
+  background: #2699FB;
+}
+.soc-icon-f-div:hover .fab.fa-facebook-f {
+  color: #ffffff !important;
+}
+
+.fa-google-plus-g {
+  color: #E95A5A;
+}
+
+.soc-icon-g-div {
+  background: #ffffff;
+  border: 1px #E95A5A solid;
+}
+
+.soc-icon-g-div:hover {
+  background: #E95A5A;
+}
+.soc-icon-g-div:hover .fa-google-plus-g {
+  color: #ffffff !important;
+}
+
 .fab-container {
   position: fixed;
   bottom: 24px;

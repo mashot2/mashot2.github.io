@@ -20,5 +20,5 @@ $(document).ready(function () {
 		$('button.btn-2').toggle();
 		event.stopPropagation();
 	});
-	
+
 });
