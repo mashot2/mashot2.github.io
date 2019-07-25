@@ -3,6 +3,10 @@
 <head>
 	<meta charset="utf-8" />
 	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
 		body { font-family: Helvetica, Arial, sans-serif; line-height: 1.3em; -webkit-font-smoothing: antialiased; }
 		.container {
 			width: 90%;
@@ -20,14 +24,22 @@
 		}
 		pre { border: 1px solid #CCC; background-color: #EEE; color: #333; padding: 10px; overflow: scroll; }
 		code { padding: 2px 4px; background-color: #F7F7F9; border: 1px solid #E1E1E8; color: #D14; }
+
+		header {
+			height: 100vh;
+			width: 100%;
+		}
 	</style>
 </head>
 <body>
+<header>
+
+</header>
 
 <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
 <script src="js/jquery.backstretch.js"></script>
 <script>
-	$.backstretch([
+	$('header').backstretch([
 		"slides/slider-1.jpg",
 		"slides/slider-2.jpg",
 		"slides/slider-3.jpg",
