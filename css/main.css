@@ -4,11 +4,20 @@
   font-family: "Segoe Print";
   src: url("/css/fonts/segoepr.ttf") format("ttf");
 }
-body {
-  line-height: 1.3em;
-  -webkit-font-smoothing: antialiased;
+@media only screen and (max-width: 554px) {
+  body {
+    line-height: 1.3em;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+  }
 }
-
+@media only screen and (min-width: 554px) {
+  body {
+    line-height: 1.3em;
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
+  }
+}
 * {
   padding: 0;
   margin: 0;
