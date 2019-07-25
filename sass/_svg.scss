@@ -166,3 +166,259 @@
 .phone-svg path {
   fill: #fff;
 }
+
+
+// FAB ------------------------------ start
+
+.fab-container {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 999;
+  cursor: pointer;
+
+  .btn-1 {
+    background-color: #ffffff;
+    font-size: 12px;
+    color: #414849;
+    padding: 12px 35px 13px 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    opacity: 1;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  .closeBtn {
+    width: 32px;
+    height: 32px;
+    opacity: 1;
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+
+  .closeBtn:before, .closeBtn:after {
+    position: absolute;
+    left: 21px;
+    content: " ";
+    height: 20px;
+    width: 1px;
+    background-color: #fff;
+    top: 11px;
+  }
+
+  .closeBtn:before {
+    transform: rotate(45deg);
+  }
+
+  .closeBtn:after {
+    transform: rotate(-45deg);
+  }
+
+  .fab-icon-holder {
+    box-shadow: 0 0px 25px rgba(0, 0, 0, 0.16);
+  }
+
+  .fab-options {
+    list-style-type: none;
+    margin: 0;
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+    transform: scale(0);
+    transform-origin: 85% bottom;
+
+    &.active {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    li {
+      padding: 5px 0 !important;
+    }
+  }
+
+  .fab-options li {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+
+    div {
+      background-color: #ffffff;
+    }
+  }
+
+  .svg-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .skype-svg path.a {
+    fill: #00AAF2;
+  }
+
+  .skype-div:hover {
+    .skype-svg path {
+      &.a {
+        fill: #fff;
+      }
+
+      &.b {
+        fill: #00AAF2;
+      }
+    }
+
+    background-color: #00AAF2;
+  }
+
+  .skype-svg path.a {
+    fill: #00AAF2;
+  }
+
+  .skype-div:hover {
+    .skype-svg path {
+      &.a {
+        fill: #fff;
+      }
+
+      &.b {
+        fill: #00AAF2;
+      }
+    }
+
+    background-color: #00AAF2;
+  }
+
+  .skype-div {
+    height: 44px;
+    width: 44px;
+    border-radius: 4px;
+  }
+
+  .messenger-svg path.a {
+    fill: #1E88E5;
+  }
+
+  .messenger-div:hover {
+    .messenger-svg path {
+      &.a {
+        fill: #fff;
+      }
+
+      &.b {
+        fill: #1E88E5;
+      }
+    }
+
+    background-color: #1E88E5;
+  }
+
+  .messenger-div {
+    height: 44px;
+    width: 44px;
+    border-radius: 4px;
+  }
+
+  .vk-svg path.a {
+    fill: #5C81B3;
+  }
+
+  .vk-div:hover {
+    .vk-svg path {
+      &.a {
+        fill: #fff;
+      }
+
+      &.b {
+        fill: #5C81B3;
+      }
+    }
+
+    background-color: #5C81B3;
+  }
+
+  .vk-div {
+    height: 44px;
+    width: 44px;
+    border-radius: 4px;
+  }
+
+  .tm-svg path.a {
+    fill: #2CA5E0;
+  }
+
+  .tm-div:hover {
+    .tm-svg path {
+      &.a {
+        fill: #fff;
+      }
+
+      &.b {
+        fill: #2CA5E0;
+      }
+    }
+
+    background-color: #2CA5E0;
+  }
+
+  .tm-div {
+    height: 44px;
+    width: 44px;
+    border-radius: 4px;
+  }
+
+  .viber-svg path.a {
+    fill: #7D3DAF;
+  }
+
+  .viber-div:hover {
+    .viber-svg path {
+      &.a {
+        fill: #fff;
+      }
+
+      &.b {
+        fill: #7D3DAF;
+      }
+    }
+
+    background-color: #7D3DAF;
+  }
+
+  .viber-div {
+    height: 44px;
+    width: 44px;
+    border-radius: 4px;
+  }
+
+  .whatsapp-svg path.a {
+    fill: #4CAF50;
+  }
+
+  .whatsapp-div:hover {
+    .whatsapp-svg path {
+      &.a {
+        fill: #fff;
+      }
+
+      &.b {
+        fill: #4CAF50;
+      }
+    }
+
+    background-color: #4CAF50;
+  }
+
+  .whatsapp-div {
+    height: 44px;
+    width: 44px;
+    border-radius: 4px;
+  }
+}
