@@ -139,8 +139,125 @@ header {
   background: url("../assets/right-arrow.svg") no-repeat;
 }
 
+.bg-dark-blue {
+  background-color: #05214A;
+  box-shadow: 0px 2px 25px rgba(61, 47, 85, 0.15);
+}
+
 .bg-darkest-blue {
   background-color: #041023;
+}
+
+.contact-us .skype-svg path.a {
+  fill: #00AAF2;
+}
+.contact-us .skype-div:hover {
+  background-color: #00AAF2;
+}
+.contact-us .skype-div:hover .skype-svg path.a {
+  fill: #fff;
+}
+.contact-us .skype-div:hover .skype-svg path.b {
+  fill: #00AAF2;
+}
+.contact-us .skype-div {
+  height: 44px;
+  width: 44px;
+  border-radius: 4px;
+  border: 1px #00AAF2 solid;
+}
+.contact-us .messenger-svg path.a {
+  fill: #1E88E5;
+}
+.contact-us .messenger-div:hover {
+  background-color: #1E88E5;
+}
+.contact-us .messenger-div:hover .messenger-svg path.a {
+  fill: #fff;
+}
+.contact-us .messenger-div:hover .messenger-svg path.b {
+  fill: #1E88E5;
+}
+.contact-us .messenger-div {
+  height: 44px;
+  width: 44px;
+  border-radius: 4px;
+  border: 1px #1E88E5 solid;
+}
+.contact-us .vk-svg path.a {
+  fill: #5C81B3;
+}
+.contact-us .vk-div:hover {
+  background-color: #5C81B3;
+}
+.contact-us .vk-div:hover .vk-svg path.a {
+  fill: #fff;
+}
+.contact-us .vk-div:hover .vk-svg path.b {
+  fill: #5C81B3;
+}
+.contact-us .vk-div {
+  height: 44px;
+  width: 44px;
+  border-radius: 4px;
+  border: 1px #5C81B3 solid;
+}
+.contact-us .tm-svg path.a {
+  fill: #2CA5E0;
+}
+.contact-us .tm-div:hover {
+  background-color: #2CA5E0;
+}
+.contact-us .tm-div:hover .tm-svg path.a {
+  fill: #fff;
+}
+.contact-us .tm-div:hover .tm-svg path.b {
+  fill: #2CA5E0;
+}
+.contact-us .tm-div {
+  height: 44px;
+  width: 44px;
+  border-radius: 4px;
+  border: 1px #2CA5E0 solid;
+}
+.contact-us .viber-svg path.a {
+  fill: #7D3DAF;
+}
+.contact-us .viber-div:hover {
+  background-color: #7D3DAF;
+}
+.contact-us .viber-div:hover .viber-svg path.a {
+  fill: #fff;
+}
+.contact-us .viber-div:hover .viber-svg path.b {
+  fill: #7D3DAF;
+}
+.contact-us .viber-div {
+  height: 44px;
+  width: 44px;
+  border-radius: 4px;
+  border: 1px #7D3DAF solid;
+}
+.contact-us .whatsapp-svg path.a {
+  fill: #4CAF50;
+}
+.contact-us .whatsapp-div:hover {
+  background-color: #4CAF50;
+}
+.contact-us .whatsapp-div:hover .whatsapp-svg path.a {
+  fill: #fff;
+}
+.contact-us .whatsapp-div:hover .whatsapp-svg path.b {
+  fill: #4CAF50;
+}
+.contact-us .whatsapp-div {
+  height: 44px;
+  width: 44px;
+  border-radius: 4px;
+  border: 1px #4CAF50 solid;
+}
+.contact-us div {
+  margin-right: 24px;
 }
 
 .phone-svg {
