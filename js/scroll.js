@@ -1,7 +1,7 @@
-let mainNavLinks = document.querySelectorAll("nav ul li a");
-let mainSections = document.querySelectorAll("main section");
+var mainNavLinks = document.querySelectorAll(".nav-item .nav-link");
+var mainSections = document.querySelectorAll("main section");
 
-let lastId;
+var lastId;
 let cur = [];
 
 // This should probably be throttled.

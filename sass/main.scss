@@ -23,16 +23,6 @@ $container-max-widths: (
         lg: 960px,
         xl: 1140px
 ) !default;
-$font-size-base: 1rem;
-@media only screen and (max-width: 1200px) {
-  $font-size-base: 0.9rem;
-}
-@media only screen and (max-width: 992px) {
-  $font-size-base: 0.8rem;
-}
-@media only screen and (max-width: 554px) {
-  $font-size-base: 0.7rem;
-}
 body {
   line-height: 1.3em;
   -webkit-font-smoothing: antialiased;
@@ -80,7 +70,7 @@ $navbar-padding-y: 20px;
 $btn-padding-y: 11px;
 
 .nav-item .nav-link {
-  font-size: $font-size-base;
+  font-size: 16px;
   line-height: 24px;
 
   &:hover {
