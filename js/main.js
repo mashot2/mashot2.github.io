@@ -30,12 +30,12 @@ $(document).ready(function () {
 			myNumber.addClass('d-none');
 			myNavbar.removeClass('d-none');
 		}
-		// if (freeLessonBtn.hasClass('border-white')) {
-		// 	freeLessonBtn.removeClass('border-white');
-		// 	freeLessonBtn.removeClass('text-white');
-		// 	freeLessonBtn.addClass('border-primary');
-		// 	freeLessonBtn.addClass('text-primary');
-		// }
+		if (freeLessonBtn.hasClass('border-white')) {
+			freeLessonBtn.removeClass('border-white');
+			freeLessonBtn.removeClass('text-white');
+			freeLessonBtn.addClass('border-primary');
+			freeLessonBtn.addClass('text-primary');
+		}
 	} else {
 		if (myNav.hasClass('bg-white')) {
 			myNav.addClass('navbar-in-top');
@@ -46,12 +46,12 @@ $(document).ready(function () {
 			myNumber.removeClass('d-none');
 			myNavbar.addClass('d-none');
 		}
-		// if (freeLessonBtn.hasClass('border-primary')) {
-		// 	freeLessonBtn.removeClass('border-primary');
-		// 	freeLessonBtn.removeClass('text-primary');
-		// 	freeLessonBtn.addClass('border-white');
-		// 	freeLessonBtn.addClass('text-white');
-		// }
+		if (freeLessonBtn.hasClass('border-primary')) {
+			freeLessonBtn.removeClass('border-primary');
+			freeLessonBtn.removeClass('text-primary');
+			freeLessonBtn.addClass('border-white');
+			freeLessonBtn.addClass('text-white');
+		}
 	}
 
 	$(window).scroll(function () {

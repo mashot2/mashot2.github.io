@@ -29,6 +29,24 @@ html {
 .my-btn {
   width: 222px;
 }
+.my-btn:hover {
+  background-image: linear-gradient(90deg, #1663d5 0%, #2272e8 100%);
+}
+.my-btn.border-primary:hover {
+  color: #ffffff !important;
+}
+
+.gradient-button {
+  background-image: linear-gradient(90deg, #1663d5 0%, #2272e8 100%);
+}
+
+.font-weight-semibold {
+  font-weight: 600;
+}
+
+.my-btn:hover {
+  background-image: linear-gradient(90deg, #1663d5 0%, #2272e8 100%);
+}
 
 .nav-item .nav-link {
   font-size: 18px;

@@ -49,6 +49,23 @@ $navbar-padding-y: 20px;
 
 .my-btn {
   width: 222px;
+  &:hover {
+    background-image: linear-gradient(90deg, rgba(22, 99, 213, 1) 0%, rgba(34, 114, 232, 1) 100%);
+  }
+  &.border-primary:hover{
+    color: #ffffff !important;
+  }
+}
+.gradient-button {
+  background-image: linear-gradient(90deg, rgba(22, 99, 213, 1) 0%, rgba(34, 114, 232, 1) 100%);
+}
+
+.font-weight-semibold {
+  font-weight: 600;
+}
+
+.my-btn:hover {
+  background-image: linear-gradient(90deg, rgba(22, 99, 213, 1) 0%, rgba(34, 114, 232, 1) 100%);
 }
 
 $btn-padding-y: 11px;
