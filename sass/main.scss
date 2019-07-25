@@ -16,33 +16,85 @@ body {
 html {
   scroll-behavior: smooth;
 }
+//@media only screen and (min-width: 1300px) {
+//  .container {
+//    max-width: 1200px !important;
+//    width: 100%;
+//    padding-right: 15px;
+//    padding-left: 15px;
+//    margin-right: auto;
+//    margin-left: auto;
+//  }
+//}
+//
+//@media only screen and (max-width: 1300px) {
+//  .wrapper-container {
+//    width: 100%;
+//    max-width: 1150px !important;
+//    padding-right: 15px;
+//    padding-left: 15px;
+//    margin-right: auto;
+//    margin-left: auto;
+//  }
+//}
+//
+//@media only screen and (max-width: 1200px) {
+//  .wrapper-container {
+//    width: 100%;
+//    max-width: 960px !important;
+//    padding-right: 15px;
+//    padding-left: 15px;
+//    margin-right: auto;
+//    margin-left: auto;
+//  }
+//}
+//@media only screen and (max-width: 992px) {
+//  .wrapper-container {
+//    width: 100%;
+//    max-width: 720px !important;
+//    padding-right: 15px;
+//    padding-left: 15px;
+//    margin-right: auto;
+//    margin-left: auto;
+//  }
+//}
+//
+//@media only screen and (max-width: 768px) {
+//  .wrapper-container {
+//    width: 100%;
+//    max-width: 550px !important;
+//    padding-right: 15px;
+//    padding-left: 15px;
+//    margin-right: auto;
+//    margin-left: auto;
+//  }
+//}
+//
+//@media only screen and (max-width: 576px) {
+//  .wrapper-container {
+//    width: 100%;
+//    max-width: 550px !important;
+//    padding-right: 15px;
+//    padding-left: 15px;
+//    margin-right: auto;
+//    margin-left: auto;
+//  }
+//}
 
-// Set Default variables values
-//$font-size-base: 1em;
-//$h1-font-size: $font-size-base * 2.5 !default;
-//$h2-font-size: $font-size-base * 2 !default;
-//$h3-font-size: $font-size-base * 1.75 !default;
-//$h4-font-size: $font-size-base * 1.5 !default;
-//$h5-font-size: $font-size-base * 1.25 !default;
-//$h6-font-size: $font-size-base !default;
-p.caca {
-  font-size: calc(12px + 1vw) !important;
-  color: #fff !important;
-}
 
 $blue: #1663D5 !default;
 $yellow: #FC9416 !default;
 $btn-padding-y: 11px;
 // $btn-padding-x: ;
-$btn-font-size: 18px;
-$btn-line-height: 24px;
-$btn-border-radius: 4px;
+//$btn-font-size: 18px;
+//$btn-line-height: 24px;
+//$btn-border-radius: 4px;
 $grid-breakpoints: (
         xs: 0,
         sm: 576px,
         md: 768px,
-        lg: 992px,
-        xl: 1200px
+        lg: 1334px,
+        xl: 1500px
 ) !default;
 
 $container-max-widths: (
@@ -168,7 +220,7 @@ $navbar-padding-y: 20px;
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
-  width: 100%;
+  //width: 100%;
   height: 100%;
 }
 
@@ -723,4 +775,3 @@ $navbar-padding-y: 20px;
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap";
-
