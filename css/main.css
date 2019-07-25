@@ -74,9 +74,8 @@ html {
   opacity: 75% !important;
 }
 
-main section {
-  min-height: 1600px;
-  padding-top: 150px;
+.bg-light-1 {
+  background-color: #FCFCFC;
 }
 
 header {
@@ -88,6 +87,72 @@ header {
   background-color: rgba(13, 43, 56, 0.25);
   opacity: 25%;
   height: 100vh;
+}
+
+.col-shadow {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  border-radius: 8px;
+  min-height: 170px;
+}
+.col-shadow img {
+  border-radius: 8px 8px 0 0;
+}
+
+.level-primary {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  position: relative;
+}
+
+.level-secondary {
+  color: #D1D1D1;
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  position: relative;
+  border: 1px #E3E3E3 solid;
+}
+
+.level-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.section-3 ul {
+  list-style: none;
+  padding: 0 !important;
+}
+.section-3 ul li {
+  position: relative;
+}
+.section-3 ul li:before {
+  vertical-align: middle;
+  display: inline-block;
+  width: 25px;
+  height: 15px;
+  content: " ";
+  background: url("../assets/right-arrow.svg") no-repeat;
+}
+
+.bg-darkest-blue {
+  background-color: #041023;
+}
+
+.phone-svg {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+.phone-svg path {
+  fill: #fff;
 }
 
 /*!
