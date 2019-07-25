@@ -23,22 +23,15 @@ $container-max-widths: (
         lg: 960px,
         xl: 1140px
 ) !default;
-
+$font-size-base: 1rem;
 @media only screen and (max-width: 554px) {
-  body {
-    line-height: 1.3em;
-    -webkit-font-smoothing: antialiased;
-    font-size: 14px;
-  }
+  $font-size-base: 0.8rem;
+}
+body {
+  line-height: 1.3em;
+  -webkit-font-smoothing: antialiased;
 }
 
-@media only screen and (min-width: 554px) {
-  body {
-    line-height: 1.3em;
-    -webkit-font-smoothing: antialiased;
-    font-size: 16px;
-  }
-}
 * {
   padding: 0;
   margin: 0;
@@ -81,7 +74,7 @@ $navbar-padding-y: 20px;
 $btn-padding-y: 11px;
 
 .nav-item .nav-link {
-  font-size: 18px;
+  font-size: $font-size-base;
   line-height: 24px;
 
   &:hover {
