@@ -14,6 +14,18 @@ body {
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.current {
+  background: #ffffff !important;
+}
+
+main section {
+  min-height: 600px;
+}
+
 header {
   height: 100vh;
   width: 100%;
