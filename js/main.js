@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	$('header').backstretch([
+	$.backstretch([
 		"slides/slider-1.jpg",
 		"slides/slider-2.jpg",
 		"slides/slider-3.jpg",
