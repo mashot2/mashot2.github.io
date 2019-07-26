@@ -772,6 +772,12 @@
 			<div class="container pt-5 mb-0">
 				<h1 class="text-secondary font-weight-bold text-center pt-1 mb-0">ДОСТИЖЕНИЯ НАШИХ УЧЕНИКОВ</h1>
 				<div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carouselExampleInterval" data-slide-to="0" class="active"></li>
+						<li data-target="#carouselExampleInterval" data-slide-to="1"></li>
+						<li data-target="#carouselExampleInterval" data-slide-to="2"></li>
+						<li data-target="#carouselExampleInterval" data-slide-to="3"></li>
+					</ol>
 					<div class="carousel-inner text-center position-relative">
 						<div class="carousel-item active container" data-interval="">
 							<div class="row justify-content-center">

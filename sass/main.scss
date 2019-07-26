@@ -188,6 +188,34 @@ header {
   border-radius: 100% !important;
 }
 
+.carousel .carousel-indicators {
+  position: absolute;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.carousel .carousel-indicators li {
+  height: 0;
+  width: 48px;
+  padding: 0;
+  border: 0;
+  border-bottom: 4px #E3E3E3 solid;
+  border-top: 4px transparent solid;
+  //transform: scale(0);
+  transition: all 0.3s ease;
+  transform-origin: 85% top;
+  &.active {
+    border-bottom: 4px #414849 solid;
+    border-top: 4px #414849 solid;
+    background-color: #414849;
+    height: 0;
+    opacity: 1;
+    //transform: scale(1);
+  }
+}
+
+.carousel .carousel-indicators li.active {
+}
 
 @import "svg";
 @import "../node_modules/bootstrap/scss/bootstrap";
