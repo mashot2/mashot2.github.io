@@ -74,7 +74,8 @@ $navbar-padding-y: 20px;
 
 .hover-75 {
   opacity: 1 !important;
-  &:hover{
+
+  &:hover {
     opacity: 0.75 !important;
     color: #000;
   }
@@ -124,10 +125,30 @@ header {
 
 .main {
   background-color: rgba(13, 43, 56, .25);
-  opacity: 25%;
+  opacity: 1;
   height: 100vh;
+  padding-top: 12%;
+  outline: 1px black solid;
+  @media only screen and (max-width: 992px) {
+    padding-top: 15%;
+    outline-color: #ca28b0;
+  }
+  @media only screen and (max-width: 768px) {
+    padding-top: 30%;
+    outline-color: #e80000;
+  }
+  @media only screen and (max-width: 540px) {
+    padding-top: 50%;
+    outline-color: #45eb00;
+  }
 }
-
+//
+//.main {
+//  background-color: rgba(13, 43, 56, .25);
+//  opacity: 25%;
+//  height: 100vh;
+//  padding-top: 12%;
+//}
 
 .col-shadow {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
@@ -212,6 +233,7 @@ header {
   //transform: scale(0);
   transition: all 0.3s ease;
   transform-origin: 85% top;
+
   &.active {
     border-bottom: 4px #414849 solid;
     border-top: 4px #414849 solid;
