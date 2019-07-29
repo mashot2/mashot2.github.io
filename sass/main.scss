@@ -137,18 +137,14 @@ header {
   opacity: 1;
   height: 100vh;
   padding-top: 12%;
-  outline: 1px black solid;
   @media only screen and (max-width: 992px) {
     padding-top: 15%;
-    outline-color: #ca28b0;
   }
   @media only screen and (max-width: 768px) {
     padding-top: 30%;
-    outline-color: #e80000;
   }
   @media only screen and (max-width: 540px) {
     padding-top: 50%;
-    outline-color: #45eb00;
   }
 }
 
