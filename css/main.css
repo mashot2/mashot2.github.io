@@ -44,8 +44,16 @@ html {
   font-weight: 600;
 }
 
-.my-btn:hover {
-  background-image: linear-gradient(90deg, #1663d5 0%, #2272e8 100%);
+.btn-hover:hover {
+  background-image: linear-gradient(90deg, #1663d5 0%, #2272e8 100%) !important;
+}
+
+.hover-75 {
+  opacity: 1 !important;
+}
+.hover-75:hover {
+  opacity: 0.75 !important;
+  color: #000;
 }
 
 .nav-item .nav-link {
@@ -136,7 +144,7 @@ header {
   width: 25px;
   height: 15px;
   content: " ";
-  background: url("../assets/right-arrow.svg") no-repeat;
+  background: url("../assets/svg/right-arrow.svg") no-repeat;
 }
 
 .bg-dark-blue {
@@ -176,119 +184,107 @@ header {
   opacity: 1;
 }
 
-.contact-us .skype-svg path.a {
-  fill: #00AAF2;
+.contact-us .contact-icon {
+  height: 44px;
+  width: 44px;
+  border-radius: 4px;
+  position: relative;
+}
+.contact-us .skype-div {
+  border: 1px #00AAF2 solid;
 }
 .contact-us .skype-div:hover {
   background-color: #00AAF2;
 }
-.contact-us .skype-div:hover .skype-svg path.a {
+.contact-us .skype-div:hover .svg.skype path.a {
   fill: #fff;
 }
-.contact-us .skype-div:hover .skype-svg path.b {
+.contact-us .skype-div:hover .svg.skype path.b {
   fill: #00AAF2;
 }
-.contact-us .skype-div {
-  height: 44px;
-  width: 44px;
-  border-radius: 4px;
-  border: 1px #00AAF2 solid;
+.contact-us .skype-div .svg.skype path.a {
+  fill: #00AAF2;
 }
-.contact-us .messenger-svg path.a {
-  fill: #1E88E5;
+.contact-us .messenger-div {
+  border: 1px #1E88E5 solid;
 }
 .contact-us .messenger-div:hover {
   background-color: #1E88E5;
 }
-.contact-us .messenger-div:hover .messenger-svg path.a {
+.contact-us .messenger-div:hover .svg.messenger path.a {
   fill: #fff;
 }
-.contact-us .messenger-div:hover .messenger-svg path.b {
+.contact-us .messenger-div:hover .svg.messenger path.b {
   fill: #1E88E5;
 }
-.contact-us .messenger-div {
-  height: 44px;
-  width: 44px;
-  border-radius: 4px;
-  border: 1px #1E88E5 solid;
+.contact-us .messenger-div .svg.messenger path.a {
+  fill: #1E88E5;
 }
-.contact-us .vk-svg path.a {
-  fill: #5C81B3;
+.contact-us .vk-div {
+  border: 1px #5C81B3 solid;
 }
 .contact-us .vk-div:hover {
   background-color: #5C81B3;
 }
-.contact-us .vk-div:hover .vk-svg path.a {
+.contact-us .vk-div:hover .svg.vk path.a {
   fill: #fff;
 }
-.contact-us .vk-div:hover .vk-svg path.b {
+.contact-us .vk-div:hover .svg.vk path.b {
   fill: #5C81B3;
 }
-.contact-us .vk-div {
-  height: 44px;
-  width: 44px;
-  border-radius: 4px;
-  border: 1px #5C81B3 solid;
+.contact-us .vk-div .svg.vk path.a {
+  fill: #5C81B3;
 }
-.contact-us .tm-svg path.a {
-  fill: #2CA5E0;
+.contact-us .tm-div {
+  border: 1px #2CA5E0 solid;
 }
 .contact-us .tm-div:hover {
   background-color: #2CA5E0;
 }
-.contact-us .tm-div:hover .tm-svg path.a {
+.contact-us .tm-div:hover .svg.tm path.a {
   fill: #fff;
 }
-.contact-us .tm-div:hover .tm-svg path.b {
+.contact-us .tm-div:hover .svg.tm path.b {
   fill: #2CA5E0;
 }
-.contact-us .tm-div {
-  height: 44px;
-  width: 44px;
-  border-radius: 4px;
-  border: 1px #2CA5E0 solid;
+.contact-us .tm-div .svg.tm path.a {
+  fill: #2CA5E0;
 }
-.contact-us .viber-svg path.a {
-  fill: #7D3DAF;
+.contact-us .viber-div {
+  border: 1px #7D3DAF solid;
 }
 .contact-us .viber-div:hover {
   background-color: #7D3DAF;
 }
-.contact-us .viber-div:hover .viber-svg path.a {
+.contact-us .viber-div:hover .svg.viber path.a {
   fill: #fff;
 }
-.contact-us .viber-div:hover .viber-svg path.b {
+.contact-us .viber-div:hover .svg.viber path.b {
   fill: #7D3DAF;
 }
-.contact-us .viber-div {
-  height: 44px;
-  width: 44px;
-  border-radius: 4px;
-  border: 1px #7D3DAF solid;
+.contact-us .viber-div .svg.viber path.a {
+  fill: #7D3DAF;
 }
-.contact-us .whatsapp-svg path.a {
-  fill: #4CAF50;
+.contact-us .whatsapp-div {
+  border: 1px #4CAF50 solid;
 }
 .contact-us .whatsapp-div:hover {
   background-color: #4CAF50;
 }
-.contact-us .whatsapp-div:hover .whatsapp-svg path.a {
+.contact-us .whatsapp-div:hover .svg.whatsapp path.a {
   fill: #fff;
 }
-.contact-us .whatsapp-div:hover .whatsapp-svg path.b {
+.contact-us .whatsapp-div:hover .svg.whatsapp path.b {
   fill: #4CAF50;
 }
-.contact-us .whatsapp-div {
-  height: 44px;
-  width: 44px;
-  border-radius: 4px;
-  border: 1px #4CAF50 solid;
+.contact-us .whatsapp-div .svg.whatsapp path.a {
+  fill: #4CAF50;
 }
 .contact-us div {
   margin-right: 24px;
 }
 
-.phone-svg {
+.svg.phone {
   height: 20px;
   width: 20px;
   position: absolute;
@@ -296,7 +292,7 @@ header {
   transform: translate(0%, -50%);
 }
 
-.phone-svg path {
+.svg.phone path {
   fill: #fff;
 }
 
@@ -374,6 +370,10 @@ header {
 }
 .fab-container .fab-icon-holder {
   box-shadow: 0 0px 25px rgba(0, 0, 0, 0.16);
+  height: 44px;
+  width: 44px;
+  border-radius: 100%;
+  position: relative;
 }
 .fab-container .fab-options {
   list-style-type: none;
@@ -407,119 +407,77 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.fab-container .skype-svg path.a {
+.fab-container .svg.skype path.a {
   fill: #00AAF2;
 }
 .fab-container .skype-div:hover {
   background-color: #00AAF2;
 }
-.fab-container .skype-div:hover .skype-svg path.a {
+.fab-container .skype-div:hover .svg.skype path.a {
   fill: #fff;
 }
-.fab-container .skype-div:hover .skype-svg path.b {
+.fab-container .skype-div:hover .svg.skype path.b {
   fill: #00AAF2;
 }
-.fab-container .skype-svg path.a {
-  fill: #00AAF2;
-}
-.fab-container .skype-div:hover {
-  background-color: #00AAF2;
-}
-.fab-container .skype-div:hover .skype-svg path.a {
-  fill: #fff;
-}
-.fab-container .skype-div:hover .skype-svg path.b {
-  fill: #00AAF2;
-}
-.fab-container .skype-div {
-  height: 44px;
-  width: 44px;
-  border-radius: 4px;
-}
-.fab-container .messenger-svg path.a {
+.fab-container .svg.messenger path.a {
   fill: #1E88E5;
 }
 .fab-container .messenger-div:hover {
   background-color: #1E88E5;
 }
-.fab-container .messenger-div:hover .messenger-svg path.a {
+.fab-container .messenger-div:hover .svg.messenger path.a {
   fill: #fff;
 }
-.fab-container .messenger-div:hover .messenger-svg path.b {
+.fab-container .messenger-div:hover .svg.messenger path.b {
   fill: #1E88E5;
 }
-.fab-container .messenger-div {
-  height: 44px;
-  width: 44px;
-  border-radius: 4px;
-}
-.fab-container .vk-svg path.a {
+.fab-container .svg.vk path.a {
   fill: #5C81B3;
 }
 .fab-container .vk-div:hover {
   background-color: #5C81B3;
 }
-.fab-container .vk-div:hover .vk-svg path.a {
+.fab-container .vk-div:hover .svg.vk path.a {
   fill: #fff;
 }
-.fab-container .vk-div:hover .vk-svg path.b {
+.fab-container .vk-div:hover .svg.vk path.b {
   fill: #5C81B3;
 }
-.fab-container .vk-div {
-  height: 44px;
-  width: 44px;
-  border-radius: 4px;
-}
-.fab-container .tm-svg path.a {
+.fab-container .svg.tm path.a {
   fill: #2CA5E0;
 }
 .fab-container .tm-div:hover {
   background-color: #2CA5E0;
 }
-.fab-container .tm-div:hover .tm-svg path.a {
+.fab-container .tm-div:hover .svg.tm path.a {
   fill: #fff;
 }
-.fab-container .tm-div:hover .tm-svg path.b {
+.fab-container .tm-div:hover .svg.tm path.b {
   fill: #2CA5E0;
 }
-.fab-container .tm-div {
-  height: 44px;
-  width: 44px;
-  border-radius: 4px;
-}
-.fab-container .viber-svg path.a {
+.fab-container .svg.viber path.a {
   fill: #7D3DAF;
 }
 .fab-container .viber-div:hover {
   background-color: #7D3DAF;
 }
-.fab-container .viber-div:hover .viber-svg path.a {
+.fab-container .viber-div:hover .svg.viber path.a {
   fill: #fff;
 }
-.fab-container .viber-div:hover .viber-svg path.b {
+.fab-container .viber-div:hover .svg.viber path.b {
   fill: #7D3DAF;
 }
-.fab-container .viber-div {
-  height: 44px;
-  width: 44px;
-  border-radius: 4px;
-}
-.fab-container .whatsapp-svg path.a {
+.fab-container .svg.whatsapp path.a {
   fill: #4CAF50;
 }
 .fab-container .whatsapp-div:hover {
   background-color: #4CAF50;
 }
-.fab-container .whatsapp-div:hover .whatsapp-svg path.a {
+.fab-container .whatsapp-div:hover .svg.whatsapp path.a {
   fill: #fff;
 }
-.fab-container .whatsapp-div:hover .whatsapp-svg path.b {
+.fab-container .whatsapp-div:hover .svg.whatsapp path.b {
   fill: #4CAF50;
-}
-.fab-container .whatsapp-div {
-  height: 44px;
-  width: 44px;
-  border-radius: 4px;
 }
 
 /*!

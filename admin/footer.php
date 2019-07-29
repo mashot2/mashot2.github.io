@@ -15,6 +15,9 @@
 	$(document).ready(function(){
 		$('.sidenav').sidenav();
 		$('.dropdown-trigger').dropdown();
+		$('.deleteBtn').click(function () {
+			return confirm('Вы уверены, что хотите удалить этот запрос?');
+		})
 	});
 </script>
 

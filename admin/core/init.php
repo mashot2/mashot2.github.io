@@ -4,8 +4,8 @@ session_start();
 $GLOBALS['config'] = array(
   'mysql' => array(
     'host' => '127.0.0.1',
-    'username' => 'kingpara_ls',//kingpara_ls
-    'password' => 'lingua123',//lingua123
+    'username' => 'kingpara_ls',
+    'password' => 'lingua123',
     'db' => 'kingpara_linguasky'
   ),
   'remember' => array(

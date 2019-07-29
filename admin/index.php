@@ -33,12 +33,19 @@ require_once 'navbar.php';
 if ($user->isLoggedIn()) {
 	?>
 	<div class="container">
+		<?php
+		if (Session::exists('delete')) {
+			echo '<h4 class="red-text"> ' . Session::get('delete')  . '</h4>';
+			Session::delete('delete');
+		}
+    ?>
 		<table>
 			<thead>
 			<tr>
 				<th>Имя</th>
 				<th>Email</th>
 				<th>Телефон</th>
+				<th>Удалить</th>
 			</tr>
 			</thead>
 
@@ -52,6 +59,7 @@ if ($user->isLoggedIn()) {
           <td>' . $result->name . '</td>
           <td>' . $result->email . '</td>
           <td>' . $result->telephone . '</td>
+          <td><a class="waves-effect waves-light btn-small deleteBtn red" href="/admin/delete.php?id=' . $result->id . '">Удалить</a></td>
         </tr>
         ';
       }

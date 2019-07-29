@@ -26,15 +26,20 @@ class Request
     }
   }
 
-  public function delete($contact_id)
+  public function delete($request_id)
   {
-    $this->_db->delete('numbers', array('contact_id', '=', $contact_id));
-    $this->_db->delete('contacts', array('id', '=', $contact_id));
+    $this->_db->delete('requests', array('id', '=', $request_id));
   }
 
   public function showRequests()
   {
     $result = $this->_db->get('requests', array('id', '>', 0));
+    return $result;
+  }
+
+  public function getName($id)
+  {
+    $result = $this->_db->get('requests', array('id', '=', $id));
     return $result;
   }
 
