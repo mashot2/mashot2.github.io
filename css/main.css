@@ -9,6 +9,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.height-full {
+  height: 100%;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -1092,12 +1096,12 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
-    max-width: 960px;
+    max-width: 1140px;
   }
 }
 @media (min-width: 1500px) {
   .container {
-    max-width: 1140px;
+    max-width: 1280px;
   }
 }
 

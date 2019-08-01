@@ -22,12 +22,16 @@ $grid-breakpoints: (
 $container-max-widths: (
         sm: 540px,
         md: 720px,
-        lg: 960px,
-        xl: 1140px
+        lg: 1140px,
+        xl: 1280px
 ) !default;
 body {
   line-height: 1.3em;
   -webkit-font-smoothing: antialiased;
+}
+
+.height-full {
+  height: 100%;
 }
 
 * {
