@@ -19,6 +19,10 @@ $grid-breakpoints: (
         xl: 1500px
 ) !default;
 
+.img-fluid {
+  width: 100% !important;
+}
+
 $container-max-widths: (
         sm: 540px,
         md: 720px,

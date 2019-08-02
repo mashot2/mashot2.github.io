@@ -4,6 +4,10 @@
   font-family: "Segoe Print";
   src: url("/css/fonts/segoepr.ttf") format("ttf");
 }
+.img-fluid {
+  width: 100% !important;
+}
+
 body {
   line-height: 1.3em;
   -webkit-font-smoothing: antialiased;
