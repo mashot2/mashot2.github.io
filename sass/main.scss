@@ -63,33 +63,13 @@ $navbar-padding-y: 20px;
 }
 
 
-
-.nav-btn {
-  background-image: linear-gradient(90deg, rgba(22, 99, 213, 1) 0%, rgba(34, 114, 232, 1) 100%);
-  color: $blue;
-  border: 1px $blue solid;
-  width: 222px;
-  border-radius: 4px !important;
-  &.in-top{
-    background: transparent;
-    color: #ffffff !important;
-    border: 1px #ffffff solid;
-    &:hover {
-      background-image: linear-gradient(90deg, rgba(22, 99, 213, 1) 0%, rgba(34, 114, 232, 1) 100%);
-      //border-image-source: linear-gradient(90deg, rgba(22, 99, 213, 1) 0%, rgba(34, 114, 232, 1) 100%);
-      //border-radius: 40px !important;
-      border: 1px $blue solid;
-      transition: all 0.4s ease 0s;
-    }
-  }
-}
-
 .btn-main {
   background: white;
   background-image: linear-gradient(90deg, rgba(22, 99, 213, 1) 0%, rgba(34, 114, 232, 1) 100%) !important;
   box-shadow: rgba(0, 0, 0, 0.16) 0 1px 2px;
   border-image-source: linear-gradient(90deg, rgba(22, 99, 213, 1) 0%, rgba(34, 114, 232, 1) 100%);
   transition: all 0.4s ease 0s;
+
   &:hover {
     opacity: 0.9;
     transition: all 0.4s ease 0s;
@@ -118,22 +98,6 @@ $btn-padding-y: 11px;
   &:hover {
     opacity: 0.75;
   }
-}
-
-.navbar-in-top {
-  background: rgb(13, 43, 56);
-  background: linear-gradient(180deg, rgba(13, 43, 56, 0.75) 0%, rgba(13, 43, 56, 0) 100%);
-  padding-bottom: 7% !important;
-  box-shadow: 0px 0px;
-  //-webkit-transition: all .01s ease-in;
-  //transition: all .01s ease-in;
-}
-
-nav.navbar-light {
-  //-webkit-transition: padding-bottom and background-color 1s ease-in;
-  transition-property: background-color, padding-bottom;
-  transition-duration: .1s, .5s;
-  -moz-transition-timing-function: ease-in;
 }
 
 $close-color: #FF0000;
@@ -412,3 +376,79 @@ footer {
 
 @import "svg";
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+
+nav {
+  .svg path {
+    &.a {
+      fill: $body-color;
+    }
+    &.b {
+      fill: #1663d5;
+    }
+  }
+
+  .nav-item .nav-link {
+    color: $body-color !important;
+  }
+
+  .my-number {
+    display: none;
+  }
+
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.04);
+  background-color: #ffffff;
+  transition-property: background-color, padding-bottom;
+  transition-duration: .1s, .3s;
+  -moz-transition-timing-function: ease-in;
+}
+
+nav.in-top {
+  .svg path {
+    &.a {
+      fill: #fff;
+    }
+    &.b {
+      fill: #1663d5;
+    }
+  }
+
+  div div ul {
+    display: none;
+  }
+
+  .my-number {
+    display: inline-block;
+  }
+
+  background: rgb(13, 43, 56);
+  background: linear-gradient(180deg, rgba(13, 43, 56, 0.75) 0%, rgba(13, 43, 56, 0) 100%);
+  padding-bottom: 7% !important;
+  box-shadow: 0px 0px;
+  transition-property: background-color, padding-bottom;
+  transition-duration: .1s, .3s;
+  -moz-transition-timing-function: ease-in;
+
+  div div .nav-btn {
+    color: #ffffff !important;
+    border: 1px #ffffff solid !important;
+
+    &:hover {
+      border: 1px $blue solid !important;
+    }
+  }
+}
+
+.nav-btn {
+  color: $blue !important;
+  border: 1px $blue solid !important;
+  width: 222px;
+  border-radius: 4px;
+
+  &:hover {
+    color: #FFFFFF !important;
+    background-image: linear-gradient(90deg, rgba(22, 99, 213, 1) 0%, rgba(34, 114, 232, 1) 100%);
+    border: 1px $blue solid !important;
+    border-radius: 4px;
+  }
+}
