@@ -208,6 +208,13 @@
   z-index: 999;
   cursor: pointer;
 
+  .help-img {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translate(0%, -50%);
+  }
+
   .btn-1 {
     background-color: #ffffff;
     font-size: 12px;
@@ -216,16 +223,17 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     opacity: 1;
 
+
     &:hover {
       opacity: 0.9;
     }
   }
 
   .closeBtn {
-    width: 32px;
-    height: 32px;
-    opacity: 1;
-
+    height: 44px;
+    width: 44px;
+    background-color: #414849;
+    border-radius: 100%;
     &:hover {
       opacity: 0.75;
     }
@@ -233,7 +241,7 @@
 
   .closeBtn:before, .closeBtn:after {
     position: absolute;
-    left: 21px;
+    left: 22px;
     content: " ";
     height: 20px;
     width: 1px;

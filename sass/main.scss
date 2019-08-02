@@ -11,6 +11,7 @@ $blue: #1663D5 !default;
 $yellow: #FC9416 !default;
 $body-color: #414849;
 $input-height: 48px;
+$border-radius: 4px;
 
 $grid-breakpoints: (
         xs: 0,
@@ -61,28 +62,42 @@ $navbar-padding-y: 20px;
   width: 222px;
 }
 
-.my-btn {
+
+
+.nav-btn {
+  background-image: linear-gradient(90deg, rgba(22, 99, 213, 1) 0%, rgba(34, 114, 232, 1) 100%);
+  color: $blue;
+  border: 1px $blue solid;
   width: 222px;
-
-  &:hover {
-    background-image: linear-gradient(90deg, rgba(22, 99, 213, 1) 0%, rgba(34, 114, 232, 1) 100%);
-  }
-
-  &.border-primary:hover {
+  border-radius: 4px !important;
+  &.in-top{
+    background: transparent;
     color: #ffffff !important;
+    border: 1px #ffffff solid;
+    &:hover {
+      background-image: linear-gradient(90deg, rgba(22, 99, 213, 1) 0%, rgba(34, 114, 232, 1) 100%);
+      //border-image-source: linear-gradient(90deg, rgba(22, 99, 213, 1) 0%, rgba(34, 114, 232, 1) 100%);
+      //border-radius: 40px !important;
+      border: 1px $blue solid;
+      transition: all 0.4s ease 0s;
+    }
   }
 }
 
-.gradient-button {
-  background-image: linear-gradient(90deg, rgba(22, 99, 213, 1) 0%, rgba(34, 114, 232, 1) 100%);
+.btn-main {
+  background: white;
+  background-image: linear-gradient(90deg, rgba(22, 99, 213, 1) 0%, rgba(34, 114, 232, 1) 100%) !important;
+  box-shadow: rgba(0, 0, 0, 0.16) 0 1px 2px;
+  border-image-source: linear-gradient(90deg, rgba(22, 99, 213, 1) 0%, rgba(34, 114, 232, 1) 100%);
+  transition: all 0.4s ease 0s;
+  &:hover {
+    opacity: 0.9;
+    transition: all 0.4s ease 0s;
+  }
 }
 
 .font-weight-semibold {
   font-weight: 600;
-}
-
-.btn-hover:hover {
-  background-image: linear-gradient(90deg, rgba(22, 99, 213, 1) 0%, rgba(34, 114, 232, 1) 100%) !important;
 }
 
 .hover-75 {
@@ -235,161 +250,165 @@ div.condition-terms {
 .top-50 {
   top: 50%;
 }
+
 .left-0 {
   left: 0;
 }
+
 .right-0 {
   right: 0;
 }
 
 .teacher-img {
-  max-height: 530px; right: 0;
+  max-height: 530px;
+  right: 0;
 }
 
 .box-shadow-005 {
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
 }
 
-  .col-shadow {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
-    background-color: #fff;
-    border-radius: 8px !important;
-    min-height: 170px;
+.col-shadow {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  border-radius: 8px !important;
+  min-height: 170px;
 
-    img {
-      border-radius: 8px 8px 0 0;
+  img {
+    border-radius: 8px 8px 0 0;
+  }
+}
+
+.level-primary {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  position: relative;
+}
+
+.level-secondary {
+  color: #D1D1D1;
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  position: relative;
+  border: 1px #E3E3E3 solid;
+}
+
+.level-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.section-3 ul {
+  list-style: none;
+  padding: 0 !important;
+
+  li {
+    position: relative;
+
+    &:before {
+      //left: 5px;
+      vertical-align: middle;
+      display: inline-block;
+      width: 25px;
+      height: 15px;
+      content: " ";
+      background: url("../assets/svg/right-arrow.svg") no-repeat;
     }
   }
+}
 
-  .level-primary {
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+
+//ТРЕНИРУЙТЕСЬ САМОСТОЯТЕЛЬНО --------------------------------------------
+.train-yourself {
+  .card-sub-img {
+    height: 64px;
+    width: 64px;
     border-radius: 50%;
-    height: 32px;
-    width: 32px;
-    position: relative;
+    border: 2px #fff solid;
+    margin-top: 1rem;
+    margin-left: 1rem;
   }
 
-  .level-secondary {
-    color: #D1D1D1;
-    border-radius: 50%;
-    height: 32px;
-    width: 32px;
-    position: relative;
-    border: 1px #E3E3E3 solid;
-  }
-
-  .level-center {
+  .card-play-btn {
+    height: 44px;
+    width: 44px;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 50%
   }
 
-  .section-3 ul {
-    list-style: none;
-    padding: 0 !important;
-
-    li {
-      position: relative;
-
-      &:before {
-        //left: 5px;
-        vertical-align: middle;
-        display: inline-block;
-        width: 25px;
-        height: 15px;
-        content: " ";
-        background: url("../assets/svg/right-arrow.svg") no-repeat;
-      }
-    }
-  }
-
-
-  //ТРЕНИРУЙТЕСЬ САМОСТОЯТЕЛЬНО --------------------------------------------
-  .train-yourself {
-    .card-sub-img {
-      height: 64px;
-      width: 64px;
-      border-radius: 50%;
-      border: 2px #fff solid;
-      margin-top: 1rem;
-      margin-left: 1rem;
-    }
-
-    .card-play-btn {
-      height: 44px;
-      width: 44px;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      border-radius: 50%
-    }
-
-    .video-translate-text {
-      left: 16px;
-      top: 16px;
-      max-width: 148px;
-      font-family: 'Segoe Print';
-      font-size: 14px;
-    }
-
-    .btn-translate {
-      bottom: 80px;
-      left: 16px;
-      font-size: 12px;
-      padding: 7px 8px 8px 8px;
-    }
-  }
-
-  //ВТОРАЯ ФОРМА -----------------------------------------------------------
-  .bg-dark-blue {
-    background-color: #05214A;
-    box-shadow: 0px 2px 25px rgba(61, 47, 85, 0.15);
-  }
-
-  .bg-darkest-blue {
-    background-color: #041023;
-  }
-
-  .round {
-    border-radius: 100% !important;
-  }
-
-  .carousel .carousel-indicators {
-    position: absolute;
-    padding-bottom: 0;
-    margin-bottom: 0;
-  }
-
-  .carousel .carousel-indicators li {
-    height: 0;
-    width: 48px;
-    padding: 0;
-    border: 0;
-    border-bottom: 4px #E3E3E3 solid;
-    border-top: 4px transparent solid;
-    //transform: scale(0);
-    transition: all 0.3s ease;
-    transform-origin: 85% top;
-
-    &.active {
-      border-bottom: 4px #414849 solid;
-      border-top: 4px #414849 solid;
-      background-color: #414849;
-      height: 0;
-      opacity: 1;
-      //transform: scale(1);
-    }
-  }
-
-  footer {
+  .video-translate-text {
+    left: 16px;
+    top: 16px;
+    max-width: 148px;
+    font-family: 'Segoe Print';
     font-size: 14px;
-    > .container {
-      border-bottom: 1px #fff solid;
-    }
   }
 
+  .btn-translate {
+    bottom: 80px;
+    left: 16px;
+    font-size: 12px;
+    padding: 7px 8px 8px 8px;
+  }
+}
 
-  @import "svg";
-  @import "../node_modules/bootstrap/scss/bootstrap";
+//ВТОРАЯ ФОРМА -----------------------------------------------------------
+.bg-dark-blue {
+  background-color: #05214A;
+  box-shadow: 0px 2px 25px rgba(61, 47, 85, 0.15);
+}
+
+.bg-darkest-blue {
+  background-color: #041023;
+}
+
+.round {
+  border-radius: 100% !important;
+}
+
+.carousel .carousel-indicators {
+  position: absolute;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.carousel .carousel-indicators li {
+  height: 0;
+  width: 48px;
+  padding: 0;
+  border: 0;
+  border-bottom: 4px #E3E3E3 solid;
+  border-top: 4px transparent solid;
+  //transform: scale(0);
+  transition: all 0.3s ease;
+  transform-origin: 85% top;
+
+  &.active {
+    border-bottom: 4px #414849 solid;
+    border-top: 4px #414849 solid;
+    background-color: #414849;
+    height: 0;
+    opacity: 1;
+    //transform: scale(1);
+  }
+}
+
+footer {
+  font-size: 14px;
+
+  > .container {
+    border-bottom: 1px #fff solid;
+  }
+}
+
+
+@import "svg";
+@import "../node_modules/bootstrap/scss/bootstrap";

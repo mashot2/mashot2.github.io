@@ -9,10 +9,10 @@ $(document).ready(function () {
 		"assets/slides/slider-7.jpg",
 		"assets/slides/slider-8.jpg",
 	], {
-		fade: 750,
-		duration: 8000,
+		fade: 1000,
+		duration: 4000,
 		preload: 0,
-		start: 2
+		start: 0
 	});
 
 	let freeLessonBtn = $('.freeLessonBtn'),
