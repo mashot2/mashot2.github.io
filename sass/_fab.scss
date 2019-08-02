@@ -1,4 +1,3 @@
-
 // FAB ------------------------------ start
 
 .fab-container {
@@ -7,6 +6,20 @@
   right: 24px;
   z-index: 999;
   cursor: pointer;
+
+  .help-img {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translate(0%, -50%);
+  }
+
+  .closeBtn {
+    height: 44px;
+    width: 44px;
+    background-color: #414849;
+    border-radius: 100%
+  }
 
   .btn-1 {
     background-color: #ffffff;

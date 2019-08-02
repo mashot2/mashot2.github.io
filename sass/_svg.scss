@@ -1,4 +1,4 @@
-// Cpntact us
+// Contact us
 .contact-us {
   .contact-icon {
     height: 44px;
@@ -18,11 +18,14 @@
           fill: #00AAF2;
         }
       }
+
       background-color: #00AAF2;
     }
+
     .svg.skype path.a {
       fill: #00AAF2;
     }
+
     border: 1px #00AAF2 solid;
   }
 
@@ -37,11 +40,14 @@
           fill: #1E88E5;
         }
       }
+
       background-color: #1E88E5;
     }
+
     .svg.messenger path.a {
       fill: #1E88E5;
     }
+
     border: 1px #1E88E5 solid;
   }
 
@@ -56,11 +62,14 @@
           fill: #5C81B3;
         }
       }
+
       background-color: #5C81B3;
     }
+
     .svg.vk path.a {
       fill: #5C81B3;
     }
+
     border: 1px #5C81B3 solid;
   }
 
@@ -75,11 +84,14 @@
           fill: #2CA5E0;
         }
       }
+
       background-color: #2CA5E0;
     }
+
     .svg.tm path.a {
       fill: #2CA5E0;
     }
+
     border: 1px #2CA5E0 solid;
   }
 
@@ -94,11 +106,14 @@
           fill: #7D3DAF;
         }
       }
+
       background-color: #7D3DAF;
     }
+
     .svg.viber path.a {
       fill: #7D3DAF;
     }
+
     border: 1px #7D3DAF solid;
   }
 
@@ -113,11 +128,14 @@
           fill: #4CAF50;
         }
       }
+
       background-color: #4CAF50;
     }
+
     .svg.whatsapp path.a {
       fill: #4CAF50;
     }
+
     border: 1px #4CAF50 solid;
   }
 
@@ -145,6 +163,10 @@
 
 .soc-icon-f-div {
   background: #ffffff;
+  border: 1px #2699FB solid;
+  height: 32px;
+  width: 32px;
+  position: relative
 }
 
 .soc-icon-f-div:hover {
@@ -162,6 +184,10 @@
 .soc-icon-g-div {
   background: #ffffff;
   border: 1px #E95A5A solid;
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  position: relative
 }
 
 .soc-icon-g-div:hover {
@@ -272,90 +298,108 @@
   .svg.skype path.a {
     fill: #00AAF2;
   }
+
   .skype-div:hover {
     .svg.skype path {
       &.a {
         fill: #fff;
       }
+
       &.b {
         fill: #00AAF2;
       }
     }
+
     background-color: #00AAF2;
   }
 
   .svg.messenger path.a {
     fill: #1E88E5;
   }
+
   .messenger-div:hover {
     .svg.messenger path {
       &.a {
         fill: #fff;
       }
+
       &.b {
         fill: #1E88E5;
       }
     }
+
     background-color: #1E88E5;
   }
 
   .svg.vk path.a {
     fill: #5C81B3;
   }
+
   .vk-div:hover {
     .svg.vk path {
       &.a {
         fill: #fff;
       }
+
       &.b {
         fill: #5C81B3;
       }
     }
+
     background-color: #5C81B3;
   }
 
   .svg.tm path.a {
     fill: #2CA5E0;
   }
+
   .tm-div:hover {
     .svg.tm path {
       &.a {
         fill: #fff;
       }
+
       &.b {
         fill: #2CA5E0;
       }
     }
+
     background-color: #2CA5E0;
   }
 
   .svg.viber path.a {
     fill: #7D3DAF;
   }
+
   .viber-div:hover {
     .svg.viber path {
       &.a {
         fill: #fff;
       }
+
       &.b {
         fill: #7D3DAF;
       }
     }
+
     background-color: #7D3DAF;
   }
 
   .svg.whatsapp path.a {
     fill: #4CAF50;
   }
+
   .whatsapp-div:hover {
     .svg.whatsapp path {
       &.a {
         fill: #fff;
       }
+
       &.b {
         fill: #4CAF50;
       }
     }
+
     background-color: #4CAF50;
   }
 }
