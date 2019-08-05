@@ -19,10 +19,17 @@ $(document).ready(function () {
 		myNav = $('nav'),
 		myNavbar = $('.my-navbar'),
 		myNumber = $('.my-number');
-	//
-	// if ($(document).scrollTop() > 1) {
-	// } else {
-	// }
+
+
+	if ($(document).scrollTop() > 1) {
+		if (myNav.hasClass('in-top')) {
+			myNav.removeClass('in-top');
+		}
+	} else {
+		if (!myNav.hasClass('in-top')) {
+			myNav.addClass('in-top');
+		}
+	}
 
 	$(window).scroll(function () {
 		if ($(document).scrollTop() > 1) {
