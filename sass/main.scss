@@ -770,13 +770,12 @@ div.condition-terms {
     position: relative;
 
     &:before {
-      //left: 5px;
       vertical-align: middle;
       display: inline-block;
-      width: 25px;
-      height: 15px;
-      content: " ";
-      background: url("../assets/svg/right-arrow.svg") no-repeat;
+      width: 30px;
+      height: 24px;
+      content: url('../assets/svg/arrow.svg');
+      transform: scale(.5);
     }
   }
 }
@@ -892,14 +891,24 @@ nav {
     display: none;
   }
 
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.04);
-  background-color: #ffffff;
-  transition-property: background-color, padding-bottom;
-  transition-duration: .1s, .3s;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+  background: #fff;
+  transition-property: box-shadow, background, padding-bottom;
+  transition-duration: .1s, .1s, .1s;
+  transition-delay: .1s, .1s, 0s;
   -moz-transition-timing-function: ease-in;
 }
 
 nav.in-top {
+  //background: rgb(13, 43, 56);
+  background: linear-gradient(180deg, rgba(13, 43, 56, 0.75) 0%, rgba(13, 43, 56, 0) 100%);
+  padding-bottom: 3.5% !important;
+  box-shadow: 0 0;
+  transition-property: background-color, padding-bottom;
+  transition-delay: 0s, 0s;
+  transition-duration: 0s, .3s;
+  -moz-transition-timing-function: ease-in;
+
   .svg path {
     &.a {
       fill: #fff;
@@ -917,15 +926,6 @@ nav.in-top {
   .my-number {
     display: inline-block;
   }
-
-  background: rgb(13, 43, 56);
-  background: linear-gradient(180deg, rgba(13, 43, 56, 0.75) 0%, rgba(13, 43, 56, 0) 100%);
-  padding-bottom: 7% !important;
-  box-shadow: 0px 0px;
-  transition-property: background-color, padding-bottom;
-  transition-duration: .1s, .3s;
-  -moz-transition-timing-function: ease-in;
-
   div div .nav-btn {
     color: #ffffff !important;
     border: 1px #ffffff solid !important;
