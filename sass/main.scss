@@ -7,9 +7,36 @@
 
 $font-family-base: Open Sans;
 
-$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
-$font-size-lg:                $font-size-base * 1.25 !default;
-$font-size-sm:                $font-size-base * .75 !default;
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg: $font-size-base * 1.25 !default;
+$font-size-sm: $font-size-base * .75 !default;
+
+@media only screen and (max-width: 1200px) {
+  h1, .h1 {
+    font-size: 40px !important;
+  }
+  h5, .h5 {
+    font-size: 24px !important;
+  }
+  h6, .h6 {
+    font-size: 16px !important;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  h1, .h1 {
+    font-size: 32px !important;
+  }
+  h5, .h5 {
+    font-size: 18px !important;
+  }
+  h6, .h6 {
+    font-size: 14px !important;
+  }
+  p {
+    font-size: 14px;
+  }
+}
 
 $blue: #1663D5 !default;
 $yellow: #FC9416 !default;
@@ -131,6 +158,7 @@ $navbar-padding-y: 20px;
     background-image: linear-gradient(90deg, rgba(22, 99, 213, .8) 0%, rgba(34, 114, 232, .8) 100%);
   }
 }
+
 @-o-keyframes GradientIn {
   10% {
     background: #fff;
@@ -173,6 +201,7 @@ $navbar-padding-y: 20px;
     background-image: linear-gradient(90deg, rgba(22, 99, 213, .8) 0%, rgba(34, 114, 232, .8) 100%);
   }
 }
+
 @-moz-keyframes GradientIn {
   10% {
     background: #fff;
