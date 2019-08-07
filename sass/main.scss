@@ -11,6 +11,7 @@ $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
 $font-size-lg: $font-size-base * 1.25 !default;
 $font-size-sm: $font-size-base * .75 !default;
 
+
 @media only screen and (max-width: 1200px) {
   h1, .h1 {
     font-size: 40px !important;
@@ -24,6 +25,7 @@ $font-size-sm: $font-size-base * .75 !default;
 }
 
 @media only screen and (max-width: 576px) {
+
   h1, .h1 {
     font-size: 32px !important;
   }
@@ -37,6 +39,74 @@ $font-size-sm: $font-size-base * .75 !default;
     font-size: 14px;
   }
 }
+@media only screen and (max-width: 992px) {
+  .wrapper-teacher {
+    .wrapper-first {
+      padding: 0 85px;
+    }
+    .wrapper-second {
+      padding: 0 85px;
+    }
+    .teacher-count-div {
+      margin-left: 0;
+    }
+    .teacher-number {
+      color: #E3E3E3;
+      font-size: 150px !important;
+    }
+
+    .teacher-string {
+      color: #E3E3E3;
+      line-height: 60px;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .wrapper-teacher {
+    .wrapper-first {
+      padding-right: 0;
+      padding-left: 0;
+    }
+    .wrapper-second {
+      padding-right: 0;
+      padding-left: 0;
+    }
+    .teacher-count-div {
+      margin-left: 0;
+    }
+    .teacher-number {
+      color: #E3E3E3;
+      font-size: 150px !important;
+    }
+
+    .teacher-string {
+      color: #E3E3E3;
+      line-height: 60px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .wrapper-teacher {
+    .wrapper-first {
+      padding-right: 85px;
+      padding-left: 0;
+    }
+    .teacher-count-div {
+      margin-left: -24px;
+    }
+    .teacher-number {
+      color: #E3E3E3;
+      font-size: 150px !important;
+    }
+    .teacher-string {
+      color: #E3E3E3;
+      line-height: 60px;
+    }
+  }
+}
+
 
 $blue: #1663D5 !default;
 $yellow: #FC9416 !default;
