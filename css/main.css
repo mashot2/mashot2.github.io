@@ -677,7 +677,7 @@ div.condition-terms span a {
 
 .section-3 ul {
   list-style: none;
-  padding: 0 !important;
+  padding-left: 32px !important;
 }
 .section-3 ul li {
   position: relative;
@@ -685,10 +685,11 @@ div.condition-terms span a {
 .section-3 ul li:before {
   vertical-align: middle;
   display: inline-block;
-  width: 30px;
-  height: 24px;
+  width: 16px;
+  height: 28px;
+  position: absolute;
+  transform: translate(-32px, 0%);
   content: url("../assets/svg/arrow.svg");
-  transform: scale(0.5);
 }
 
 .train-yourself .card-sub-img {
