@@ -39,7 +39,30 @@ $font-size-sm: $font-size-base * .75 !default;
     font-size: 14px;
   }
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 768px) {
+  .wrapper-teacher {
+    .wrapper-first {
+      padding: 0;
+    }
+    .wrapper-second {
+      padding: 0;
+    }
+    .teacher-count-div {
+      margin-left: 0;
+    }
+    .teacher-number {
+      color: #E3E3E3;
+      font-size: 100px !important;
+    }
+
+    .teacher-string {
+      color: #E3E3E3;
+      line-height: 60px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
   .wrapper-teacher {
     .wrapper-first {
       padding: 0 85px;
