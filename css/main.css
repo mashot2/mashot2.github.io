@@ -692,6 +692,10 @@ div.condition-terms span a {
   content: url("../assets/svg/arrow.svg");
 }
 
+.text-for-level {
+  padding-top: 3px;
+}
+
 .train-yourself .card-sub-img {
   height: 64px;
   width: 64px;
@@ -10736,11 +10740,11 @@ h3 {
 }
 nav {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
-  background: #fff;
-  transition-property: box-shadow, background, padding-bottom;
-  transition-duration: 0.1s, 0.1s, 0.1s;
-  transition-delay: 0.1s, 0.1s, 0s;
+  transition-property: box-shadow, padding-bottom;
+  transition-duration: 0.1s, 0s;
+  transition-delay: 0.1s, 0s;
   -moz-transition-timing-function: ease-in;
+  animation: nav-bg 0.1s forwards;
 }
 nav .svg path.a {
   fill: #414849;
@@ -10755,14 +10759,55 @@ nav .my-number {
   display: none;
 }
 
+@keyframes nav-bg {
+  10% {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  20% {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  30% {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  40% {
+    background: rgba(255, 255, 255, 0.4);
+  }
+  50% {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  60% {
+    background: rgba(255, 255, 255, 0.6);
+  }
+  70% {
+    background: rgba(255, 255, 255, 0.7);
+  }
+  80% {
+    background: rgba(255, 255, 255, 0.8);
+  }
+  90% {
+    background: rgba(255, 255, 255, 0.9);
+  }
+  100% {
+    background: white;
+  }
+}
+@keyframes nav-bg-top {
+  10% {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  100% {
+    background: linear-gradient(180deg, rgba(13, 43, 56, 0.75) 0%, rgba(13, 43, 56, 0) 100%);
+  }
+}
 nav.in-top {
-  background: linear-gradient(180deg, rgba(13, 43, 56, 0.75) 0%, rgba(13, 43, 56, 0) 100%);
+  background: linear-gradient(180deg, rgba(13, 43, 56, 0.75) 0%, rgba(13, 43, 56, 0) 100%) !important;
   padding-bottom: 3.5% !important;
   box-shadow: 0 0;
   transition-property: background-color, padding-bottom;
   transition-delay: 0s, 0s;
   transition-duration: 0s, 0.3s;
   -moz-transition-timing-function: ease-in;
+  animation: nav-bg-top 0s forwards;
 }
 nav.in-top .svg path.a {
   fill: #fff;
