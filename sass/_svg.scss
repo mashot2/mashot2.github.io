@@ -156,29 +156,57 @@
   fill: #fff;
 }
 
-
-.fab.fa-facebook-f {
-  color: #2699FB;
-}
-
 .soc-icon-f-div {
   background: #ffffff;
   border: 1px #2699FB solid;
   height: 32px;
   width: 32px;
-  position: relative
-}
-
-.soc-icon-f-div:hover {
-  .fab.fa-facebook-f {
-    color: #ffffff !important;
+  position: relative;
+  &:hover {
+    .fab.fa-facebook-f {
+      color: #ffffff !important;
+    }
+    background: #2699FB;
   }
-
-  background: #2699FB;
+  .fab.fa-facebook-f {
+    color: #2699FB;
+  }
 }
 
-.fa-google-plus-g {
-  color: #E95A5A;
+.soc-icon-vk-div {
+  background: #ffffff;
+  border: 1px #5C81B3 solid;
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  position: relative;
+  &:hover {
+    .fab.fa-vk {
+      color: #ffffff !important;
+    }
+    background: #5C81B3;
+  }
+  .fab.fa-vk {
+    color: #5C81B3;
+  }
+}
+
+.soc-icon-twitter-div {
+  background: #ffffff;
+  border: 1px #1DA1F2 solid;
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  position: relative;
+  &:hover {
+    .fab.fa-twitter {
+      color: #ffffff !important;
+    }
+    background: #1DA1F2;
+  }
+  .fab.fa-twitter {
+    color: #1DA1F2;
+  }
 }
 
 .soc-icon-g-div {
@@ -187,15 +215,16 @@
   border-radius: 50%;
   height: 32px;
   width: 32px;
-  position: relative
-}
-
-.soc-icon-g-div:hover {
-  .fa-google-plus-g {
-    color: #ffffff !important;
+  position: relative;
+  &:hover {
+    .fa-google-plus-g {
+      color: #ffffff !important;
+    }
+    background: #E95A5A;
   }
-
-  background: #E95A5A;
+  .fa-google-plus-g {
+    color: #E95A5A;
+  }
 }
 
 
